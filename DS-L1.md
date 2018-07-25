@@ -65,6 +65,9 @@
 + ...
 
 ### 9. 
-![alt text](https://github.com/Fannibals/S2/blob/master/pic/internet.png?raw=true)
+
+![alt text][logo]
+
+[logo]: https://github.com/Fannibals/S2/blob/master/pic/internet.png "Logo Title Text 2"
 
 
