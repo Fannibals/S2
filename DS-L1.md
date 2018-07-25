@@ -11,7 +11,11 @@
 ### 1. Distributed Systems
 
 #### Definition
-+ A system in which hardware or software components located at networked computers  
-  communicates and coordinate their actions only by message passing
++ A system in which hardware or software components located at **networked** computers  
+  communicates and coordinate their actions only by **message passing**
 + A distributed system is a collection of independent computers that appear to  
   the users of the 
+
+### 2. Networks vs. Distributed Systems
++ **Networks**: A media for interconnecting local and wide area computers and exchange messages  
+&emsp;&emsp;&emsp;&emsp;&emsp; based on protocols. Network entities are visible and they are explicitly addressed
