@@ -97,10 +97,27 @@
 
 ### 10. Challenges
 + Heterogeneity
+  - Heterogeneous components must be able to interoperate
+    - Different OS, hardware, programming languages, etc.
 + Distribution transparency
+  - Distribution should be hidden from the user as much as possible
+    - Access transparency(OS), Location transparency(DNS), Failure transparency 
+    - Replication transparency(DNS), Migration transparency
+    - Concurrency, performance, scaling, application level transparencies
 + Fault tolerance
+  - Failure of a component (partial failure) should not result in failure of the whole system
 + Scalability
+  - System should work efficiently with an increasing number of users
+  - System performance should increase with inclusion of additional resources
 + Concurrency
+  - Shared access to resources must be possible
+    - Provide and manage concurrent access to shared resources
 + Openness
+  - Interfaces should be publicly available to ease inclusion of new components
 + Security
-+ 
+  - The system should only be used in the way intended
+    - Confidentiality
+    - Integrity
+    - Availability
+    - Non-repudiation
+      - through Encryption, Authentication, Authorization
