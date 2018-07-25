@@ -25,17 +25,17 @@
   
   
 ### 3. Reasons for Distributed Systems
-+ Functional Separation
++ **Functional Separation**
   - Existence of computers with different capabilities and purposes
   - Beneficial to separae collection from processing
-+ Inherent distribution
++ **Inherent distribution**
   - The process/activity is naturally distributed
   - Information, people
-+ Power imbalance and load variation
++ **Power imbalance and load variation**
   - Distribute computational load among different computers.
-+ Reliability
++ **Reliability**
   - Long term preservation and data backup (replication) at different locations.
-+ Economies
++ **Economies**
   - Share resources ==> reduce cost, statistical multiplexing
 
 
@@ -53,15 +53,15 @@
   - Each component of the system can fail independently, leaving the others still running. 
 
 ### 5. Characteristics of DS
-+ Parallel activities
++ **Parallel activities**
   - Autonomous components executing concurrent tasks
-+ Communication via message
++ **Communication via message**
   - No shared memory
-+ Resource sharing
++ **Resource sharing**
   - printer, database etc.
-+ No global state
++ **No global state**
   - No single process can have knowledge of the current global state of the system
-+ No global clock
++ **No global clock**
   - Only limited precision for processes to synchronize their clocks
 
 
@@ -96,25 +96,25 @@
 
 
 ### 10. Challenges
-+ Heterogeneity
++ **Heterogeneity**
   - Heterogeneous components must be able to interoperate
     - Different OS, hardware, programming languages, etc.
-+ Distribution transparency
++ **Distribution transparency**
   - Distribution should be hidden from the user as much as possible
     - Access transparency(OS), Location transparency(DNS), Failure transparency 
     - Replication transparency(DNS), Migration transparency
     - Concurrency, performance, scaling, application level transparencies
-+ Fault tolerance
++ **Fault tolerance**
   - Failure of a component (partial failure) should not result in failure of the whole system
-+ Scalability
++ **Scalability**
   - System should work efficiently with an increasing number of users
   - System performance should increase with inclusion of additional resources
-+ Concurrency
++ **Concurrency**
   - Shared access to resources must be possible
     - Provide and manage concurrent access to shared resources
-+ Openness
++ **Openness**
   - Interfaces should be publicly available to ease inclusion of new components
-+ Security
++ **Security**
   - The system should only be used in the way intended
     - Confidentiality
     - Integrity
