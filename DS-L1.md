@@ -26,29 +26,52 @@
   
 ### 3. Reasons for Distributed Systems
 + Functional Separation
+  - Existence of computers with different capabilities and purposes
+  - Beneficial to separae collection from processing
 + Inherent distribution
+  - The process/activity is naturally distributed
+  - Information, people
 + Power imbalance and load variation
+  - Distribute computational load among different computers.
 + Reliability
+  - Long term preservation and data backup (replication) at different locations.
 + Economies
+  - Share resources ==> reduce cost, statistical multiplexing
 
 
 ### 4. Consequences of Distributed Systems
-+ Concurrency
-+ Heterogeneity
-+ No global clock
-+ Independent Failures
++ **Concurrency**
+  - A can do the his work on A's computer while B can do his work on B's computer  
+    and A and B can share resources like web pages or file when necessary.
++ **Heterogeneity**
+  - Different hardware, different software, different protocols
++ **No global clock**
+  - there are limits to the accuracy with which the computers in a network can synchronize their clocks –  
+    there is no single global notion of the correct time.
+  - This is a direct consequence of the fact that the only communication is by sending messages through a network.
++ **Independent Failures**
+  - Each component of the system can fail independently, leaving the others still running. 
 
 ### 5. Characteristics of DS
 + Parallel activities
+  - Autonomous components executing concurrent tasks
 + Communication via message
+  - No shared memory
 + Resource sharing
+  - printer, database etc.
 + No global state
+  - No single process can have knowledge of the current global state of the system
 + No global clock
+  - Only limited precision for processes to synchronize their clocks
+
 
 ### 6. Goals of DS
 + Connecting Users and Resources
+  - widely available
 + Transparency
+  - user only need to know how to use rather than the complexity behind
 + Openness
+  - anyone can interface with, understand and extend system
 + Scalability
 + Enhanced Availability
 
@@ -72,3 +95,12 @@
 <img src="https://github.com/Fannibals/S2/blob/master/pic/web.png" alt="alt text" width="600" height="450">
 
 
+### 10. Challenges
++ Heterogeneity
++ Distribution transparency
++ Fault tolerance
++ Scalability
++ Concurrency
++ Openness
++ Security
++ 
