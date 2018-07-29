@@ -18,12 +18,44 @@
 
 #### What is a database?
 + what is in a database?
+  - transactional data (cunsumer purchases)
+  - sensor data (weather data)
+  - measurement data (lab data)
+  - accounting data
+  -...
 + What is **NOT** in a database?
+  - unstructured data
 
-#### What is knowledge technology?
-#### What are some of its challenges?
-#### How to get from data to wisdom?
+#### What to do with data?
++ analysis and structure them by using computers
+  - database schema
+  - mark-up languages
+  - programmatic APIs
 
++ what data satisfies a given pattern?
+  - retrieve records, summary and visualization
++ what is computation for?
+  - it is used for accompishing task
+    - source of data
+    - context, situation, assumptions
+    - desired outcome
+
+#### Concrete task
++ Computers and algorithms were originally developed to solve what might be called **concrete tasks**.
+  - WELL DEFINED
+  - we can assess whether the solution is correct. always one correct answer
+
+#### From Data => Information
++ **What Patterns satisfy this data?**  
+rather than what data satisfies a given pattern?
+
+
+### What is knowledge technology?
+### What are some of its challenges?
+### How to get from data to wisdom? 
+classify, group, clustering === transfer from data to information
+
+We want to understand the relationsip between each data point == data model --- knowledge
 #### Characteristics of Knowledge Technologies
 + **General**: the data must be transformed to suit the axioms or assumptions of the method,  
               in a rigorous way
@@ -33,9 +65,9 @@
 #### Methods for data analysis
 + **Supervised Learning**
   * Classification
-    - predicting a discrete class 
+    - predicting a **discrete class**
   * Regresssion
-    - predicting a numeric quantity
+    - predicting a **numeric quantity**
 * **Discrete data** is counted ie.the number of students in the class  
 **Continuous data** is measured ie. the height of a person
 
