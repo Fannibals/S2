@@ -34,3 +34,22 @@ We want to understand the relationsip between each data point == data model --- 
   - examples: Wikipedia entries, Bibtex records, bibliography
   
 ### 4. 
+
+### 5. regular expression
++ (a) /[a-zA-Z]+/
+  - One or More (english) letter charactes
++ (b) /^[A-Za-z][a-z]*$/
++ (c) /p[aeiou]{,2}t/
+  - Strings containing p and t, and there are up to 2 vowels in between
++ (d) /\s(\w+)\s\1/
+  - String 
+
+### 6. 
++ (a) Match a price
+  - /^\$[0-9]+/
++ (b) Match an Australian telephone number
+  - 
++ (c) Remove HTML comments from a document
++ (d) Validate an email address
+  - /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$
+
