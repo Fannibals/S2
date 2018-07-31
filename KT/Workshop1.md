@@ -33,22 +33,29 @@ We want to understand the relationsip between each data point == data model --- 
   - some parts are structured 
   - examples: Wikipedia entries, Bibtex records, bibliography
   
-### 4. 
+### 4. "where to eat for dinner?"
 
 ### 5. regular expression
 + (a) /[a-zA-Z]+/
   - One or More (english) letter charactes
+    - +: >=1
+    - ?: 0/1
+    - *: >=0
 + (b) /^[A-Za-z][a-z]*$/
+  - starting from an english letter, and end with zero or more repeting small english letter
+  - **333 or 369???**
 + (c) /p[aeiou]{,2}t/
   - Strings containing p and t, and there are up to 2 vowels in between
 + (d) /\s(\w+)\s\1/
-  - String 
+  - space+(one or more words)+ space+space
 
 ### 6. 
 + (a) Match a price
   - /^\$[0-9]+/
 + (b) Match an Australian telephone number
+  - /061-[0-9]{9}/
 + (c) Remove HTML comments from a document
+  - 
 + (d) Validate an email address
   - /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$
 
