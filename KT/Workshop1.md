@@ -55,7 +55,6 @@ We want to understand the relationsip between each data point == data model --- 
 + (b) Match an Australian telephone number
   - /061-[0-9]{9}/
 + (c) Remove HTML comments from a document
-  - 
 + (d) Validate an email address
   - /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$
 
