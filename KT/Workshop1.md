@@ -4,12 +4,19 @@
 "where", and "when" questions
 + **Knowledge**: **Application** of data and information; answers **"how"** questions 
 
++ knowledge is for users, determinded by users
+
 classify, group, clustering === transfer from data to information
 
 We want to understand the relationsip between each data point == data model --- knowledge
 
 ### 2. KT
-+ (a)
++ (a) Knowledge task vs. Concrete task
++ | | knowledge task | concrete task |
+  | --- | ---| ---- |
+  |input| irregular input | regular, structured, defined input|
+  |correctness| no correct answer | has the correct answer|
+      
 + (b) Knowledge tasks or concrete tasks
   - i. Multiplying two floating-point numbers in base 16 &nbsp;&nbsp;&nbsp;  **concrete**
   - ii. Playing a competitive game of naughts-and-crosses   &nbsp;&nbsp;&nbsp;**concrete**
@@ -36,11 +43,13 @@ We want to understand the relationsip between each data point == data model --- 
 ### 4. "where to eat for dinner?"
 
 ### 5. regular expression
++ https://regexr.com/ website for exercising regex
 + (a) /[a-zA-Z]+/
   - One or More (english) letter charactes
     - +: >=1
     - ?: 0/1
     - *: >=0
+  - take care of the difference between /[a-z]/ and /[a-z]+/
 + (b) /^[A-Za-z][a-z]*$/
   - starting from an english letter, and end with zero or more repeting small english letter
   - **333 or 369???**
@@ -51,7 +60,7 @@ We want to understand the relationsip between each data point == data model --- 
 
 ### 6. 
 + (a) Match a price
-  - /^\$[0-9]+/
+  - \$[^0][0-9]+\.\d{0,2} for price
 + (b) Match an Australian telephone number
   - /061-[0-9]{9}/
 + (c) Remove HTML comments from a document
