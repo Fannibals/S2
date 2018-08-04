@@ -74,7 +74,8 @@ person (given name? surname? both?)? An organisation? A city? A street? We need 
 
 ### 6. 
 + (a) Match a price
-  - \$[^0][0-9]+\.\d{0,2} for price
+  - ~\$[^0][0-9]+\.\d{0,2} for price~
+  - /\$(0|[1-9][0-9]*)(\.\d{1,2})?/
 + (b) Match an Australian telephone number
   - ~/061-[0-9]{9}/~
   - /(\+61|0)\d([ -]?\d){8}/
