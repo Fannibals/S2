@@ -68,6 +68,7 @@ person (given name? surname? both?)? An organisation? A city? A street? We need 
   - starting from an english letter, and end with zero or more repeting small english letter
   - word or Alphabet
 + (c) /p[aeiou]{,2}t/
+  - Notes; it will match all pxxt
   - Strings containing p and t, and there are up to 2 vowels in between
 + (d) /\s(\w+)\s\1/
   - space+(one or more words)+ space+space
