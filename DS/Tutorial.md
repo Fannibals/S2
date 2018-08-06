@@ -57,3 +57,22 @@
   - Security
   - Usage tracking
   - Development and configuration management
+
+##
+##
+## Tutorial 2
+
+### 1. Briefly discuss three aspects of the Socket interface.
++ server
++ client
++ port
+### 2. Briefly explain three possible failures that can happen when using UDP for communication.
++ **Omission failures**
+  - Messages may be dropped occasionally, either because of a **checksum error** or  
+  because **no buffer space** is available at the source or destination.
++ Ordering
+  - Messages can sometimes be delivered out of sender order.
+### 3. Briefly explain three aspects of TCP that address issues not addressed by UDP.
++ The processes using the connection cannot distinguish between network failure and failure of the process at the other end of the connection.
++ The communicating processes cannot tell whether the messages they have sent recently have been received or not.
+### 4. List the steps involved at the client and at the server to establish a TCP stream socket connection.
