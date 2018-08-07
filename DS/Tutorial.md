@@ -101,3 +101,33 @@ UDP
   - request
   SYN - 1
   ACK - 1
+
+
+### Exploring an interactive Client/Server
++ |Client|    Server|
+  | ----|-----|
+  | 1. create a clientsocket(xp,port) (automatically build the connection)|1. create a server socket|
+  | 2. create a scanner object| 2.invoke different sockets for different connections|
+  | 3. get inputstream and outputstream from client socket| --|
+  | 4. write data to output stream|
+  | 5. read inputstream|
+  
+  
+  
++ using buffer(r/w) due to I/O stream is really expensive
++ getlocalport = 4444 , which is server port
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
