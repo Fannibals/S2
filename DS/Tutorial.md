@@ -63,16 +63,41 @@
 ## Tutorial 2
 
 ### 1. Briefly discuss three aspects of the Socket interface.
+endpoint of the interprocess communication
+both server and client are processes
+socket is the object of server/client
+
 + server
 + client
-+ port
++ the port can be used both for sending and receiving
++ there is only one socket response for the port
++ each socket is associated with one protocol (UDP, TCP)
+
+UDP
+  - <8kb, 
 ### 2. Briefly explain three possible failures that can happen when using UDP for communication.
 + **Omission failures**
   - Messages may be dropped occasionally, either because of a **checksum error** or  
   because **no buffer space** is available at the source or destination.
 + Ordering
   - Messages can sometimes be delivered out of sender order.
++ duplicated data
++ data corruption - checksum
 ### 3. Briefly explain three aspects of TCP that address issues not addressed by UDP.
 + The processes using the connection cannot distinguish between network failure and failure of the process at the other end of the connection.
++ Reliablity 
+  - acknowledgement
++ order 
+  - sequence number
++ congestion control
++ Message Size
+  - no data tranformation limit
+ 
 + The communicating processes cannot tell whether the messages they have sent recently have been received or not.
 ### 4. List the steps involved at the client and at the server to establish a TCP stream socket connection.
+  
+  
++ connnection establishment
+  - request
+  SYN - 1
+  ACK - 1
