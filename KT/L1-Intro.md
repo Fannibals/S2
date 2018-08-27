@@ -16,7 +16,7 @@
 
 ### Lecture 1: Introduction to Knowledge Technology
 
-#### What is a database?
+#### What is in a database?
 + what is in a database?
   - transactional data (cunsumer purchases)
   - sensor data (weather data)
@@ -27,7 +27,7 @@
   - unstructured data
 
 #### What to do with data?
-+ analysis and structure them by using computers
++ Analysis and structure them by using computers
   - database schema
   - mark-up languages
   - programmatic APIs
@@ -42,25 +42,36 @@
 
 #### Concrete task
 + Computers and algorithms were originally developed to solve what might be called **concrete tasks**.
-  - WELL DEFINED
+  - task is WELL DEFINED
   - we can assess whether the solution is correct. always one correct answer
+  - Mechainical transformation of data can only very limitedly enhance human's knowledge
 
 #### From Data => Information
 + **What Patterns satisfy this data?**  
-rather than what data satisfies a given pattern?
+**rather than what data satisfies a given pattern?**
 
 
 ### What is knowledge technology?
++ tasks where the data is irregualr or unreliable 
++ outcome is not well-defined
++ context is critical , we are using computers to  mediate between us and data
++ help us to make decisions and whereby enhance our knowledge
+
 ### What are some of its challenges?
 ### How to get from data to wisdom? 
 classify, group, clustering === transfer from data to information
 
 We want to understand the relationsip between each data point == data model --- knowledge
 #### Characteristics of Knowledge Technologies
-+ **General**: the data must be transformed to suit the axioms or assumptions of the method,  
-              in a rigorous way
-+ **Specific**: detailed understanding of the task is used to drive development of the method,  
++ **General**: 
+  - the data must be transformed to suit the axioms(公理) or assumptions of the method,    
+    in a rigorous(缜密严谨的) way
+  - A general problem: find features of the data items that discriminate between categories.
+
++ **Specific**: 
+  - detailed understanding of the task is used to drive development of the method,    
                 perhaps by drawing on a toolkit of components an of solutions to similar problems.
+  - A specialized problem: parse a particular language.
                 
 #### Methods for data analysis
 + **Supervised Learning**
