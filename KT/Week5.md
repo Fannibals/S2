@@ -45,4 +45,27 @@
 #### 3.2 Tokenisation
 + The aim of parsing is to reduce a web page, or a query, to a sequence of tokens.
 + Canonicalisation
-	- 
+	-  a process for converting data that has more than one possible representation into a "standard", "normal", or canonical form.
+	
+#### 3.3 Stemming
+- the most significant form of canonicalization 
+- Porter stemmer
+	- sses -> ss 
+#### 3.4 Zoing
+- web search engines typically calculate weights for each of these zones,  
+and compute similarities for documents by combining these results on the fly
+
+#### 3.5 Indexing
++ Concept
+	- with an index, query processing can be restricted to documents that contain at least one of the query terms.
+
+	- INVERTED INDEX -- inverted lis
++ Search structure
+	- for each distinct word t, the search structure contains:
+		- A pointer to the srat of the corrsponding inverted list
+		- A count ft of the documents containing t.
+	- contains **vocabulary**
++ Inverted lists
+	- identifier d of doc containing t
+	- f(d,t) of t in d
+
