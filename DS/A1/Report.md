@@ -19,34 +19,37 @@
 
 ### Section 2. Introduction to the System
 
-	2.1  Architecture
-	client-server archiecture
++ 2.1  Architecture
+	- client-server archiecture
 
-	2.2 Interaction
-		- java object serializable
++ 2.2 Interaction
+	- java object serializable
 
-	2.3 Failure handle
++ 2.3 GUI & Functionalities 
+	- UI for Client
+		- Search
+			- if the word is in the dictionary, return one or more meaning
+			- if the word is not in the dictionary, return a proper message
+		- Add
+			- if the word is already in the dictionary, return a proper message
+			- if the word is not in the dictionary, add it into the dictionary
+			- user can add more than one word in the 
+		- Remove
+			- if the word is in the dictionary, remove it 
+			- if the word is not in the dictionary, return a proper message
+		- Exit
+			- if the user clicks the exit, it will send a message to server and close both socket and GUI
+	- UI for Server
++ 2.4 Error handles
 
-	2.4 Functionalities 
-	- Search
-		- if the word is in the dictionary, return one or more meaning
-		- if the word is not in the dictionary, return a proper message
-	- Add
-		- if the word is already in the dictionary, return a proper message
-		- if the word is not in the dictionary, add it into the dictionary
-		- user can add more than one word in the 
-	- Remove
-		- if the word is in the dictionary, remove it 
-		- if the word is not in the dictionary, return a proper message
-	- Exit
-		- 
 ### 3. An overall class design and an interaction diagram.
 + UML <img src = "", height = 600, width = 400>
 
-+ ss
 
 ### Section 4. Critical analysis
-+ 
++ pros
++ cons
 
 ### Section 5. Conclusion
+
 
