@@ -43,7 +43,7 @@
 + 2.4 Error handles
 
 ### 3. An overall class design and an interaction diagram.
-<img src = "https://github.com/Fannibals/S2/blob/master/DS/A1/Pic/UML.png", height = 600, width = 400>
++ <img src="https://github.com/Fannibals/S2/blob/master/DS/A1/Pic/UML.png" height = 900, width = 700>
 
 
 ### Section 4. Critical analysis
