@@ -1,5 +1,11 @@
-## COMP90015: Distributed Systems - Assignment 1 Multi-threaded Dictionary Server
+## COMP90015 Assignment 1 Multi-threaded Dictionary Server
+&nbsp;
+### Name: Yuming Shen
+### Student ID: 719088
+&nbsp;
+
 ### Section 1. Project Needs
+----------------------------
 
 + This project is going to design and implement a multi-threaded server which can deal with concurrent issues with many clients at at time. Socket and Threads are two fundamental techonologies needed to be used in this project. Serveral requirements includes:
 	- Architecture
@@ -24,13 +30,14 @@
 
 
 ### Section 2. Introduction to the System
+------------------------------------------
 + This section is going to introduce this multi-threaded dictionary system
 
 + 2.1  Architecture
 	This dictionary system uses a client-server archiecture, which mainly includes 
 
 + 2.2 Interaction
-	- 
+	- Socket
 	- java object serializable
 
 + 2.3 GUI & Functionalities 
@@ -51,13 +58,16 @@
 + 2.4 Error handles
 
 ### 3. An overall class design and an interaction diagram.
+----------------------------------------------------------
 + <img src="https://github.com/Fannibals/S2/blob/master/DS/A1/Pic/UML.png" height = 900, width = 900>
 
 
 ### Section 4. Critical analysis
+--------------------------------
 + pros
 + cons
 
 ### Section 5. Conclusion
+-------------------------
 
 
