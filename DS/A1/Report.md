@@ -1,3 +1,4 @@
+## COMP90015: Distributed Systems - Assignment 1 Multi-threaded Dictionary Server
 ### Section 1. Project Needs
 
 + This project is going to design and implement a multi-threaded server which can deal with concurrent issues with many clients at at time. Socket and Threads are two fundamental techonologies needed to be used in this project. Serveral requirements includes:
