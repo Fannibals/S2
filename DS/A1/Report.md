@@ -6,23 +6,23 @@
 ### Section 1. Project Needs
 ---------------------------
 
-+ This project is going to design and implement a multi-threaded server which can deal with concurrent issues with many clients at at time. Socket and Threads are two fundamental techonologies needed to be used in this project. Serveral requirements includes:
-	- Architecture
++ This project is going to design and implement a multi-threaded server which can deal with concurrent issues with many clients at a same time. Socket and Threads are two fundamental techonologies needed to be used in this project. Serveral requirements includes:
+	- **Architecture**
 		- A client-Server architecture is required
 		- Either one of thread-per-request, thread-per-connection, or worker pool architectures is accepted.
-	- Interaction
+	- **Interaction**
 		- Must use sockets to connect all communication, and within each communicaiton,
 		a specific messsage exchange protocol should be used.
-	- Failure Handle
+	- **Failure Handling**
 		- Errors should be properly handled
 + Basic functional requirements includes:
-	1) Search Function
+	1) **Search Function**
 		- This dictionary needs to implements search function, When a user search a word, it should return one or more meaning if this word is in dictionary, otherwise, return a proper information message.
 
-	2) Add Function
+	2) **Add Function**
 		- It should supports adding a new word (with corresponding meaning) to the dictionary. The user may add a word with more than one meaning.
 
-	3) Remove Funciton
+	3) **Remove Funciton**
 		- Removing an existing word (with its meaning) from the dictionary should be implemented
 + User Interface
 	- A Graphical User Interface should be provided for user to do operations.
