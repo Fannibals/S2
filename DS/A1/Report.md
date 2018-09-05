@@ -27,34 +27,63 @@
 + User Interface
 	- A Graphical User Interface should be provided for user to do operations.
 
-
-### Section 2. Introduction to the System
+### Section 2. Discription of the components of the system
 ------------------------------------------
-+ This section is going to introduce this multi-threaded dictionary system
++ The whole multi-threaded dictionary system consists of:
++ **Client Part:**
++ UI for Client
++ <img src="https://github.com/Fannibals/S2/blob/master/DS/A1/Pic/ClientUI.png" height = 400, width = 400>
+	- for the Search function
+		- if the word is in the dictionary, after the user click search button, the dictionary will return one or more meaning
+		
+		- if the word is not in the dictionary, it will tell user that it is not in the dictionary.
+		
+	- Adding a new word
+		- if the word is already in the dictionary, it will not let user to edit any more.
+		
+		- if the word is not in the dictionary, then the user can add the word(more than one meaning is enabled through clicking + button) in the dictionary.
+		
+	- Removing a word
+		- if the word is in the dictionary, remove it
+		 
+		- if the word is not in the dictionary, return a proper message
+		
+	- Exit 
+		- if the user clicks the exit, it will send a message to server and close both socket and GUI.
 
-+ 2.1  Architecture
-	This dictionary system uses a client-server archiecture, which mainly includes 
++ **Server Part:**
 
-+ 2.2 Interaction
-	- Socket
-	- java object serializable
++ <img src="https://github.com/Fannibals/S2/blob/master/DS/A1/Pic/ServerUI.png" height = 400, width = 400>
 
-+ 2.3 GUI & Functionalities 
-	- UI for Client
-		- Search
-			- if the word is in the dictionary, return one or more meaning
-			- if the word is not in the dictionary, return a proper message
-		- Add
-			- if the word is already in the dictionary, return a proper message
-			- if the word is not in the dictionary, add it into the dictionary
-			- user can add more than one word in the 
-		- Remove
-			- if the word is in the dictionary, remove it 
-			- if the word is not in the dictionary, return a proper message
-		- Exit
-			- if the user clicks the exit, it will send a message to server and close both socket and GUI
-	- UI for Server
-+ 2.4 Error handles
++ UI for Server 
+	- Counting active client numbers
+	- Recording all clients' actions
+	
+
++ Error handlings
+
+
+### Section 3. Overall Class design and interaction diagram
++ 3.1 Class Strucure:
+	- **Server Part**
+		- Server Class
+			- It is the main class of the Server part
+		- EachConnection Class
+		- ServerStatus Class
+		- SGUI Class
+		- Message Class
+	- **Client Part**
+		- Client Class
+		- MessageListener Class
+		- ClientUI Class 
+		- Message Class
+	- **Others**
+		- dict.txt
+		- jackson jars
+
++ 3.2 Interaction diagram
+	- <img src="UML", width="600", height="600">
+
 
 ### 3. An overall class design and an interaction diagram.
 ----------------------------------------------------------
