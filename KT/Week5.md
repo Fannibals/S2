@@ -55,7 +55,7 @@
 - web search engines typically calculate weights for each of these zones,  
 and compute similarities for documents by combining these results on the fly
 
-#### 3.5 Indexing
+### 4. Indexing
 + Concept
 	- with an index, query processing can be restricted to documents that contain at least one of the query terms.
 
@@ -67,5 +67,55 @@ and compute similarities for documents by combining these results on the fly
 	- contains **vocabulary**
 + Inverted lists
 	- identifier d of doc containing t
-	- f(d,t) of t in d
+	- transposition from (d,t) to (t,d)
+	
+### 5. Querying
+#### Boolean Querying
++ Boolean Querying using a **TDM** is ???
 
++ Boolean Querying using an **inverted index**
+	- ignore within-document frequencies
++ For Conjunctive Queries (all with AND)
+	- from the shorest to the longest
+#### Ranked Querying
++ still: **TF + IDF + length**
+
+##### Steps
++ 1. Allocate an **accumulator A(d)** for each doc d, set **A(d) to 0**
+	- for store the dot product
++ 2. for each **query term t**
+	- 1) Calculate **W(q,t)** adn fetch the inverted list for t
+	- 2) For each **entry in the inverted list**, the pair <d(t),f(d,t)>
+		- Calculate W(d,t) and **Increment the A(d): Ad ← Ad + wq,t × wd,t
++ 3. Read the array of W(d) values and for each A(d)>0,  
+	Normalise by the document length Ad ← Ad /Wd .
++ 4. 4 Identify the r **greatest Ad values** and return the corresponding documents.	
+	
+#### Accumulator costs
++ In order to reduce costs:
++ **Limiting** approach
+	- A simple mechanism is to impose a limit L on the number of accumulators. 
+	-  term t is ordered by decreasing W(q,t) --- MOST imformative first
++ **thresholding** approach
+	- threshold S for dot product
+	- Only create an accumulator A(d) when dot product > S
+	- only when wq,t × wd,t > thresholding S
++ Querying costs 
+	- Disk space, Memory space, CPU time, Disk traffic are should be considered 
+
+### Add-ons
++ Phrase queries **???**
+	- thre main strategies for phrase query evaluation:
+		- Process queries as bag-of-words
+		- Add word positions to the index entries
+		- Use some form of phrase index or word-pair index
++ Link Analysis
+	- The two major link analysis algorithms are HITS (hyperlinked-induced
+topic search, not discussed in this subject) and PageRank.
++ Pagerank
+	- 如果一个网页被很多其他网页链接到的话说明这个网页比较重要，也就是PageRank值会相对较高, 如果一个PageRank值很高的网页链接到一个其他的网页，那么被链接到的网页的PageRank值会相应地因此而提高
+	- each web document has a fixed number of credits associated with it, a portion of which it redistributes to documents it links to; in turn, it receives credits from pages that point to it.
+	- https://www.youtube.com/watch?v=P8Kt6Abq_rM
+
+	
+	
