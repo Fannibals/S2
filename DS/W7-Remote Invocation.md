@@ -90,3 +90,60 @@
 | No| Not applicable|Not applicable |Maybe|
 | Yes| No |Re-execute procedure|At-least-once|
 | Yes| Yes|Retransmit reply|At-most-once| 
+
++ Failure models
++ Maybe semantics:
+  - **omission failures** if the request or result message is lost;
+  - **crash failures** when the server containing the remote operation fails.
++ At-least-once semantics:(**idempotent operation!!!**)
+  - crash failures
+  - arbitrary failures:  in cases when the request message is retransmitted, the remote server may receive it and execute the procedure more than once, possibly causing wrong values to be stored or returned
++ At-most-once semantics:
+  - either no execution or once
+  
+### 4. Distributed Object model
+
++ ** Two critical concepts**
+  - **Remote object references**: Other objects can invoke the methods of a remote object if they have access to its remote object reference. 
+  - **Remote interfaces**: Every remote object has a remote interface that specifies which of its methods can be invoked remotely.
++ Remote Object
+  - An object that can receive remote invocations 
++ Actions
+  - Actions can be performed on remote objects and they are invoked using Remote method Invocation(RMI)
+
+### 5. Implementation of RMI
+
++ Communication Module
+   - two cooperating communication modules carry out the request-reply protocol
+   - It uses three fields from the message:
+    - Message type
+    - Request ID
+    - Remote object reference
+
++ Remote Reference Module
+#### RMI Software
++ Software layer that lies between the application and the communication and object reference modules 
++ Proxy
+  - 
++ Dispatcher
+  - mapping to an appropriate method in the skeleton based on the method ID
+
++ skeleton
+  - Unmarshalling
+  - Marshalling
+
+
+#### Implementing an RMI Application
++ Remote Interface
++ Servant component
++ Server component
++ Client component
++ Compile source and generate stubs
+
+#### The binder
++ Client programs require a way to obtain the remote object reference of the remote objects in the server.
++ A binder is a service in a distributed system that supports this functionality.
+
+#### transparency
+
+  
