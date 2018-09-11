@@ -82,4 +82,11 @@
 | RRA| Request|Reply|Acknowledge reply|   
 
 ### 4. Invocation Semantics
++ call semantics
 
+|--|Fault tolerance measures|--| Call semantics |
+|---|---|---|---|
+| Retransmit request message| duplicate filtering|Re-execute procedure or retransmit reply| |
+| No| Not applicable|Not applicable |Maybe|
+| Yes| No |Re-execute procedure|At-least-once|
+| Yes| Yes|Retransmit reply|At-most-once| 
